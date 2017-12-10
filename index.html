@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Train Scheduler</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <!-- database -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <!-- Custome stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron text-center">
+            <h1>Anytime is Train Time</h1>
+            <h3>Choo Choo. Chee Chee</h3>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3>Current Train Schedule</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th> Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency (min)</th>
+                                <th>Next Arrival </th>
+                                <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>John</td>
+                                <td>Manager</td>
+                                <td>john@example.com</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                </tr>       
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+                            
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3>Add Train</h3>
+                    </div>
+    <div class="panel-body">
+            <form action="/action_page.php">
+                
+                    <div class="form-group">
+                    <label for="name">Train Time</label>
+                    <input type="Name" class="form-control" id="train-name-input" placeholder="Enter name" name="name">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="text">Destination</label>
+                    <input type="text" class="form-control" id="destination-input" placeholder="City / State" name="destination">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for= "date">First Train Time (HH:mm military time)</label>
+                    <input type="date" class="form-control" id="train-time-input" placeholder="HH:mm" name="train-time">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for= "date">Frequency (min)</label>
+                    <input type="text" class="form-control" id="frequency-input" placeholder="00" name="frequency-time">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-default" id="submitInfo Btn" >Submit</button>
+                    
+                </form>
+        </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Custom Javascript -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
