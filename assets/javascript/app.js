@@ -35,12 +35,8 @@ event.preventDefault();
     console.log(newTrain.trainDestinati);
     console.log(newTrain.trainFrequency);
     console.log(newTrain.nextArrival);
-    console.log(newTrain.minutesAway);
+    console.log(newTrain.minutesAway)
   
-    // Alert
-    alert("Employee successfully added");
-  
-    // Clears all of the text-boxes
     $("#train-name-input").val("");
     $("#destination-input").val("");
     $("#tain-time-input").val("");
