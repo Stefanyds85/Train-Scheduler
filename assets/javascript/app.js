@@ -28,30 +28,32 @@ $("#submitInfoBtn").on("click", function (event) {
         name: trainName,
         trainDestination: destination,
         trainFrequency: frequency,
-        startTime: trainTime
+        startTime: trainTime,
+        arrival: nextArrival,
+        minAaway: MinutesAway
 
     }
 
-    console.log("newTrain:", newTrain);
+    // console.log("newTrain:", newTrain);
 
     database.ref().push(newTrain);
 
-    console.log(newTrain.name);
-    console.log(newTrain.trainDestination);
-    console.log(newTrain.trainFrequency);
-    console.log(newTrain.nextArrival);
-    console.log(newTrain.minutesAway)
+    for ( i=0; i< newTrain.length; i++){
+        console.log(newTrain[i]);
 
     $("#train-name-input").val("");
     $("#destination-input").val("");
     $("#tain-time-input").val("");
     $("#frequency-input").val("");
+    
+    }
 });
 
 database.ref().on("child_added", function(childSnapshot, prevChildKey) {
-    
-      console.log(childSnapshot.val());
+
+console.log(childSnapshot.val());
+
+
 
 });
-
-});
+  });
